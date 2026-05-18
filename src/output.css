@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -158,4 +159,194 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .m-auto {
+    margin: auto;
+  }
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  .table {
+    display: table;
+  }
+  .h-\[32\] {
+    height: 32;
+  }
+  .h-\[32px\] {
+    height: 32px;
+  }
+  .h-\[72\] {
+    height: 72;
+  }
+  .h-\[72px\] {
+    height: 72px;
+  }
+  .w-\[100\$\] {
+    width: 100$;
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
+  .w-\[144\] {
+    width: 144;
+  }
+  .w-\[144px\] {
+    width: 144px;
+  }
+  .w-\[1366\] {
+    width: 1366;
+  }
+  .max-w-\[3px\] {
+    max-width: 3px;
+  }
+  .max-w-\[38px\] {
+    max-width: 38px;
+  }
+  .max-w-\[375\] {
+    max-width: 375;
+  }
+  .max-w-\[375px\] {
+    max-width: 375px;
+  }
+  .max-w-\[380px\] {
+    max-width: 380px;
+  }
+  .max-w-\[389px\] {
+    max-width: 389px;
+  }
+  .max-w-\[390px\] {
+    max-width: 390px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-\[1px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-b-\[1px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-\[2px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-\[gra\] {
+    border-color: gra;
+  }
+  .border-\[gray\] {
+    border-color: gray;
+  }
+  .bg-\[\#f5f5f5\] {
+    background-color: #f5f5f5;
+  }
+  .bg-\[red\] {
+    background-color: red;
+  }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .text-\[\#69B99D\] {
+    color: #69B99D;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:h-\[3px\] {
+    @media (width >= 64rem) {
+      height: 3px;
+    }
+  }
+  .lg\:h-\[23px\] {
+    @media (width >= 64rem) {
+      height: 23px;
+    }
+  }
+  .lg\:w-\[438\] {
+    @media (width >= 64rem) {
+      width: 438;
+    }
+  }
+  .lg\:w-\[438px\] {
+    @media (width >= 64rem) {
+      width: 438px;
+    }
+  }
+  .lg\:w-\[1366\] {
+    @media (width >= 64rem) {
+      width: 1366;
+    }
+  }
+  .lg\:w-\[1366px\] {
+    @media (width >= 64rem) {
+      width: 1366px;
+    }
+  }
+  .lg\:max-w-\[1366px\] {
+    @media (width >= 64rem) {
+      max-width: 1366px;
+    }
+  }
+  .lg\:bg-\[red\] {
+    @media (width >= 64rem) {
+      background-color: red;
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+    }
+  }
+}
